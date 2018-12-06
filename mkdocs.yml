@@ -1,0 +1,39 @@
+site_name: fabrico-docs
+site_url: https://github.com/ca-fabrico/fabrico-docs.git 
+site_description: The `Fabrico` command line interface.
+site_author: Code Architects
+
+repo_url: https://github.com/ca-fabrico/fabrico-docs.git 
+edit_uri: ""
+
+pages:
+    - Overview: index.md
+    - Guides:
+        - Getting started: guides/getting-started.md
+        - Concepts:
+            - Overview: guides/concepts/concepts-overview.md
+        - Samples:
+            - NetCore Microservices: guides/samples/microservices-netcore.md
+    - Reference:
+        - Yaml Reference: references/fabrico-yml.md
+    - CLI Reference:
+        - Overview: cli-reference/cli-overview.md
+        - Commands: cli-reference/cli-commands.md
+    - FAQ: faq/index.md
+
+theme: readthedocs
+
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+    - toc:
+        permalink: 
+    - admonition
+    - def_list
+
+copyright: Copyright &copy; 2017 <a href="http://www.fabrico.io">Fabrico</a>.
+google_analytics:
+
+plugins:
+    - search
